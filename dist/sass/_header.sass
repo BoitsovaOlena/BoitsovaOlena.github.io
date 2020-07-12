@@ -1,8 +1,73 @@
-header
-    widows: 100%
+.head
+    width: 100%
     position: fixed
     top: 0
     left: 0
-    
+    +flex(row, space-between, center, nowrap)
+    background-color: $bgColor1
+    border-bottom: 1px solid $borderColor
+    nav 
+        max-width: 80%
+        a 
+            display: inline-block
+            font-family: "Raleway", Helvetica, sans-serif
+            +font(400, 0.8rem, 1, 0.25em, normal)
+        li:not(:last-child)
+            border-right: 1px solid $borderColor
+    h1,
+    ul,
+    li 
+        display: inline-block
+    h1 
+        border-right: 1px solid $borderColor
+        color: $textColor1
+        a
+            padding: 21.6px 24px
+            color: $textColor1
+            font-weight: 900
+        a:hover
+            color: $hoverColor
+    ul  
+        padding: 16px 0px
+        max-width: inherit
+        li
+            padding: 0px 16px
+    .search
+        +flex(row, flex-start, center, nowrap)
+        border-left: 1px solid $borderColor
+        form 
+            display: none
+            input
+                margin-left: 18px
+                padding: 10px
+                background-color: $bgColor2
+                border: 2px solid $borderColor
+                +font(400, 1rem, 1, normal, normal)
+                transition: color 0.5s linear 0.1s
+            input::placeholder
+                +font(400, 1rem, 1, normal, normal)
+            input:focus
+                border: 2px solid $hoverColor
+        #search-on:checked ~ form
+            display: block
 
-
+        .search__text
+            position: relative
+            display: inline-block
+            width: 64px
+            height: 56px
+            color: $textColor2
+            transition: color 0.5s linear
+        .search__text:before
+            +icon("\f002", 900)
+            font-size: 1.2rem
+            display: inline-block
+            z-index: 2
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            cursor: pointer
+            
+        .search__text:hover
+            color: $hoverColor

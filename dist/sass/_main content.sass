@@ -1,0 +1,128 @@
+.main-content
+    width: calc(100% - 400px)
+    +flex(column, flex-start, flex-start, nowrap)
+    .button
+        text-transform: uppercase
+        font-family: "Raleway", Helvetica, sans-serif
+        +font(800, 0.7rem, 4.8, 0.25em, normal)
+        color: $textColor1
+        background-color: $bgColor1
+        border: 1px solid $borderColor
+        transition: border 0.5s linear, color 0.5s linear
+    .button:hover
+        color: $hoverColor
+        border: 1px solid $hoverColor
+    .post
+        width: 100%
+        +flex(column, flex-start, stretch, nowrap)
+        background-color: $bgColor1
+        border: 1px solid $borderColor
+        margin-bottom: 48px
+        .post__header
+            +flex(row, flex-start, stretch, nowrap)
+            border-bottom: 1px solid $borderColor
+        .post__title
+            width: calc( 100% - 271px )
+            padding: 60px 48px 52.8px 48px
+            border-right: 1px solid $borderColor
+            text-transform: uppercase
+            h2
+                margin-bottom: 12.8px
+                font-family: "Raleway", Helvetica, sans-serif
+                +font(900, 1.5rem, 1.65, 0.25em, normal)
+                color: $textColor1
+            p 
+                font-family: "Raleway", Helvetica, sans-serif
+                +font(400, 0.7rem, 2.5, 0.25em, normal)
+        a:hover
+            h2 
+                color: $hoverColor
+        .post__info
+            padding: 60px 48px 0 48px
+            text-transform: uppercase
+            .post__time
+                display: block
+                text-align: right
+                width: 175px
+                margin: 5.6px 0px 11.2px 0px
+                color: $textColor1
+                font-family: "Raleway", Helvetica, sans-serif
+                +font(800, 0.75rem, 1.65, 0.25em, normal)
+            .post__autor
+                +flex(row, flex-end, center, nowrap)
+                +font(400, 0.6rem, 1.65, 0.25em, normal)
+                text-decoration: underline dotted
+                span 
+                    font-family: "Raleway", Helvetica, sans-serif
+                    margin-right: 14.4px
+                img 
+                    display: block
+                    width: 38.4px
+                    border-radius: 100%
+        .post__content
+            width: 100%
+            padding: 48px 48px 0px 48px
+            .post__img
+                display: block
+                width: 100%
+                overflow: hidden
+                margin-bottom: 48px
+                img 
+                    display: block
+                    width: 100%
+                    transform: scale(1)
+                    transition: transform 0.5s linear
+                img:hover
+                    transform: scale(1.05)
+            p 
+                line-height: 1.75
+                margin-bottom: 32px
+        .post__footer
+            +flex(row, space-between, center, nowrap)
+            padding: 0px 48px 48px 48px
+            .post__more
+                padding: 0px 33.6px
+            .post__aditional
+                +flex(row, flex-end, center, nowrap)
+                .post__categori
+                    font-family: "Raleway", Helvetica, sans-serif
+                    text-transform: uppercase
+                    +font(400, 0.6rem, 1.65, 0.25em, normal)
+                    text-decoration: underline dotted
+                    transition: color 0.5s linear
+                a 
+                    font-family: "Raleway", Helvetica, sans-serif
+                    +font(400, 0.6rem, 1.65, 0.25em, normal) 
+                .post__likes,
+                .post__comments
+                    position: relative
+                .post__likes:before
+                    +icon("\f004", 900)
+                .post__comments:before 
+                    +icon("\f075", 900)
+                .post__likes:before,
+                .post__comments:before
+                    display: inline-block
+                    margin-right: 7.2px
+                    margin-left: 19.2px
+                    z-index: 2
+                    position: absolute
+                    top: 0
+                    left: 0
+                    cursor: pointer
+                a:not(:first-child)
+                    margin-left: 19.2px
+                    padding-left: 38.4px
+                    border-left: solid 1px $borderColor
+    footer
+        .switch
+            padding: 0 36px
+            background-color: $bgColor2
+        .switch.disabled
+            color: $borderColor
+        .switch.disabled:hover
+            color: $borderColor
+            border: 1px solid $borderColor
+        .switch:not(:first-child)
+            margin-left: 16px
+        

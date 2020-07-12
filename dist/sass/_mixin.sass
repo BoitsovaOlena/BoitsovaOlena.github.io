@@ -4,23 +4,16 @@
     justify-content: $jc
     align-items: $alignI
     flex-wrap: $wrap
-// @mixin font($weight, $size, $hei, $spac, $style)
-//     font-weight: $weight
-//     font-size: $size
-//     line-height: $hei
-//     letter-spacing: $spac
-//     font-style: $style
-
-
-
-
-// @mixin font($size, $spac)
-//     font-size: $size
-//     letter-spacing: $spac
-// @mixin icon($content, $weight)
-//     content: $content
-//     font-family: "Font Awesome 5 Free"
-//     font-weight: $weight
+@mixin font($weight, $size, $hei, $spac, $style)
+    font-weight: $weight
+    font-size: $size
+    line-height: $hei
+    letter-spacing: $spac
+    font-style: $style
+@mixin icon($content, $weight)
+    content: $content
+    font-family: "Font Awesome 5 Free"
+    font-weight: $weight
 // @mixin border-bottom()
 //     border-bottom: 2px solid $textColor
 // @mixin background-image($width, $url, $rgb)
