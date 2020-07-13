@@ -3,9 +3,10 @@
     position: fixed
     top: 0
     left: 0
+    z-index: 5
     +flex(row, space-between, center, nowrap)
     background-color: $bgColor1
-    border-bottom: 1px solid $borderColor
+    border-bottom: $border
     nav 
         max-width: 80%
         a 
@@ -13,13 +14,13 @@
             font-family: "Raleway", Helvetica, sans-serif
             +font(400, 0.8rem, 1, 0.25em, normal)
         li:not(:last-child)
-            border-right: 1px solid $borderColor
+            border-right: $border
     h1,
     ul,
     li 
         display: inline-block
     h1 
-        border-right: 1px solid $borderColor
+        border-right: $border
         color: $textColor1
         a
             padding: 21.6px 24px
@@ -34,7 +35,7 @@
             padding: 0px 16px
     .search
         +flex(row, flex-start, center, nowrap)
-        border-left: 1px solid $borderColor
+        border-left: $border
         form 
             display: none
             input

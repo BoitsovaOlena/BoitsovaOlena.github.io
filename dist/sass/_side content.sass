@@ -7,8 +7,9 @@
     .conception__content
         font-family: "Raleway", Helvetica, sans-serif
         text-transform: uppercase
-        padding-bottom: 73px
-        border-bottom: 1px solid $borderColor
+        padding-bottom: 48px
+        border-bottom: $border
+        margin-bottom: 48px
         h2
             margin-bottom: 19px
             +font(900, 2rem, 1.65, 0.25em, normal)
@@ -17,3 +18,137 @@
             +font(400, 0.8rem, 2.5, 0.25em, normal)
             a 
                 text-decoration: underline dotted
+    .little-posts, 
+    .posts-list
+        width: 100%
+        margin-bottom: 48px
+        border-bottom: $border
+    .little-posts
+        padding-bottom: 16px
+        .post-mini
+            width: 100%
+            margin-bottom: 32px
+            background-color: $bgColor1
+            border: $border
+            +flex(column, flex-start, stretch, nowrap)
+            .post-mini__img
+                +img-wrapp()
+                img 
+                   +img()
+                img:hover
+                    +img-hover()
+            .post-mini__head
+                +flex(row, space-between, center, nowrap)
+                padding: 20px
+                .post-mini__wrapp
+                    h2,
+                    time 
+                        font-family: "Raleway", Helvetica, sans-serif
+                    h2 
+                        +font(800, 0.75rem, 1.55, 0.25em, normal)
+                        color: $textColor1
+                    time 
+                        +font(400, 0.6rem, 1.55, 0.25em, normal)
+                        text-transform: uppercase
+                    a:hover
+                        h2 
+                            color: $hoverColor
+                img 
+                    display: block
+                    width: 38.4px
+                    border-radius: 100%
+    .posts-list
+        +flex(column, flex-start, stretch, nowrap)
+        .post-intro
+            +flex(row, space-between, center, nowrap)
+            padding-bottom: 24px
+            margin-bottom: 24px
+            .post-intro__img
+                display: inline-block
+                width: 64px
+                height: 64px
+                margin-right: 24px 
+                img
+                    display: inline-block
+                    width: inherit
+                    height: inherit
+            .post-intro__head
+                h2,
+                time 
+                    font-family: "Raleway", Helvetica, sans-serif
+                h2 
+                    +font(800, 0.75rem, 1.55, 0.25em, normal)
+                    color: $textColor1
+                time 
+                    +font(400, 0.6rem, 1.55, 0.25em, normal)
+                    text-transform: uppercase
+                a:hover
+                    h2 
+                        color: $hoverColor
+        .post-intro:not(:last-child)
+            border-bottom: 1px dotted $borderColor
+    .about
+        width: 100%
+        +flex(column, flex-start, flex-start, nowrap)
+        margin-bottom: 48px
+        padding-bottom: 48px
+        border-bottom: $border
+        h2 
+            margin-bottom: 19.2px
+            font-family: "Raleway", Helvetica, sans-serif
+            +font(800, 0.8rem, 1.65, 0.25em, normal)
+            text-transform: uppercase
+            
+        p 
+            +font(400, 0.9rem, 1.75, 0em, normal)
+            margin-bottom: 28.8px
+        .about__button
+            padding: 0 24px
+            text-transform: uppercase
+            font-family: "Raleway", Helvetica, sans-serif
+            +font(800, 0.6rem, 4.8, 0.25em, normal)
+            color: $textColor1
+            background-color: $bgColor2
+            border: $border
+            transition: border 0.5s linear, color 0.5s linear
+        .about__button:hover
+            color: $hoverColor
+            border: 1px solid $hoverColor
+    footer
+        ul 
+            +flex(row, flex-start, center, nowrap)
+            margin-bottom: 28px
+            .icon
+                padding-right: 16px
+                line-height: 1.75
+                .label 
+                    display: none 
+                .twitter:before
+                    +icon2("\f099", 400)
+                    opacity: 0.6
+                .facebook:before
+                    +icon2("\f39e", 400)
+                    opacity: 0.6
+                .instagram:before
+                    +icon2("\f16d", 400)
+                    opacity: 0.6
+                .rss:before
+                    +icon("\f09e", 900)
+                    opacity: 0.6
+                .email:before
+                    +icon("\f0e0", 900)
+                    opacity: 0.6
+        p 
+            color: rgb(170, 170, 170)
+            font-family: "Raleway", Helvetica, sans-serif
+            +font(400, 0.55rem, 1.5, 0.25em, normal)
+            text-transform: uppercase
+            a 
+                color: rgb(170, 170, 170)
+                text-transform: uppercase
+                text-decoration: underline dotted
+                transition: color 0.5s linear
+            a:hover
+                color: $hoverColor
+
+
