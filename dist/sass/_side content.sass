@@ -67,13 +67,11 @@
             margin-bottom: 24px
             .post-intro__img
                 display: inline-block
-                width: 64px
-                height: 64px
-                margin-right: 24px 
                 img
                     display: inline-block
-                    width: inherit
-                    height: inherit
+                    width: 64px
+                    height: 64px
+                    margin-right: 24px 
             .post-intro__head
                 h2,
                 time 
@@ -91,7 +89,7 @@
             border-bottom: 1px dotted $borderColor
     .about
         width: 100%
-        +flex(column, flex-start, flex-start, nowrap)
+        +flex(row, flex-start, flex-start, wrap)
         margin-bottom: 48px
         padding-bottom: 48px
         border-bottom: $border
