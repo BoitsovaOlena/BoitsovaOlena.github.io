@@ -1,61 +1,269 @@
-// @media (max-width: 1340px)
-//     .search 
-//         padding: 40px 100px
+@media (max-width: 1680px)
+    .head
+        width: 100%
+        position: fixed
+        top: 0
+        left: 0
 
-// @media (max-width: 1240px)
-//     .search 
-//         width: calc( 100% - 38%)
-//         padding: 40px 60px
-//     .favourite
-//         width: 38%
-//         .content
-// @media (max-width: 1140px)
-//     .search 
-//         padding: 40px 40px
-// @media (max-width: 1040px)
-//     .favourite
-//         .content
-//             padding: 68px 15px 40px 15px
-// @media (max-width: 834px)
-//     main 
-//         display: block
-//     .search 
-//         width: 100%
-//         height: 100%
-//     .favourite
-//         position: absolute
-//         top: 0px
-//         right: 0px
-//         .button-favorite
-//             display: none
-//         .button-favorite-mini
-//             display: inline-block
-//         .content
-//             display: none
-//             width: 480px
-//     .favourite.open
-//         width: 100%
-//         height: fit-content
-//         .button-favorite-mini:after
-//             display: none
-//         .button-favorite-mini:after
-//             display: inline-block
-//         .content
-//             display: flex
-//             width: 480px
-//             padding: 68px 40px 40px 40px
-//         .fill
-//             display: block
-// @media (max-width: 480px)
-//     .search 
-//         padding: 20px 20px
-//     .favourite.open
-//         .button-favorite-mini
-//             top: 20px
-//             right: 20px
-//         .content
-//             width: 100%
-//             padding: 68px 20px 20px 20px
-// a, 
-// button 
-//     transition: color 0.4s linear 0.1s
+@media (max-width: 1280px)
+    main
+        +flex(column-reverse, flex-start, flex-start, nowrap)
+        width: 100%
+        .main-content
+            width: 100%
+            +flex(column, flex-start, flex-start, nowrap)
+            padding-bottom: 48px
+            border-bottom: $border
+            margin-bottom: 48px
+            .conception 
+                display: block
+                +flex(column, flex-start, center, nowrap)
+                margin-bottom: 48px
+                .conception__logo
+                    display: inline-block
+                    margin-bottom: 16px
+                .conception__content
+                    text-transform: uppercase
+                    text-align: center
+                    h2
+                        font-family: "Raleway", Helvetica, sans-serif
+                        margin-bottom: 32px
+                        +font(900, 2rem, 1.65, 0.25em, normal)
+                        color: $textColor1
+                    p 
+                        font-family: "Raleway", Helvetica, sans-serif
+                        +font(400, 0.8rem, 2.5, 0.25em, normal)
+                        a 
+                            font-family: inherit
+                            text-decoration: underline dotted
+        .side-content
+            width: 100%
+            margin-right: 0px
+            .conception 
+                display: none
+            .little-posts
+                +flex(row, space-between, flex-start, wrap)
+                .post-mini
+                    width: calc(50% - 16px)
+            .posts-list
+                .post-intro
+                    +flex(row, flex-start, center, nowrap)
+
+@media (max-width: 980px)
+    .head
+        +flex(row, space-between, flex-start, nowrap)
+        nav 
+            +flex(row, flex-start, flex-start, nowrap)
+            div
+                position: relative
+            ul 
+                display: none
+                li 
+                    width: 100%
+                li:not(:last-child)
+                    border-right: none
+                li:not(:last-child)
+                    border-bottom: 1px dotted $borderColor
+                    padding-bottom: 24px
+                    margin-bottom: 24px
+            .nav-on
+                position: relative
+                transition: color 0.5s linear
+            .nav-on:before
+                +icon("\f0c9", 900)
+                height: 55px
+                width: 64px
+                padding-top: 15px
+                text-align: center
+                font-size: 1.2rem
+                display: inline-block
+                z-index: 2
+                position: absolute
+                top: 0
+                left: 0
+                cursor: pointer
+                border-right: $border
+            .nav-on:hover
+                color: $hoverColor
+            #nav-on:checked ~ ul
+                +flex(column, flex-start, flex-start, nowrap)
+                position: fixed
+                top: 0
+                right: 0
+                width: 300px
+                padding: 48px
+                height: 100vh
+                overflow: auto
+                background-color: $bgColor1
+                z-index: 7
+                border: $border
+            #nav-on:checked ~ .nav-on
+                position: fixed
+                top: 0
+                left: 0
+                width: 100%
+                height: 100vh
+                background-color: rgba(170, 170, 170, 0.6)
+                z-index: 6
+            #nav-on:checked ~ .nav-on:before
+                display: none
+    main
+        padding: 104px 0px 48px 0px
+        .main-content
+            .conception 
+                padding: 0px 48px
+            .post
+                .post__header
+                    +flex(column, flex-start, stretch, nowrap)
+                    padding: 60px 48px 52px 48px
+                    .post__title,
+                    .post__info
+                        width: 100%
+                        padding: 0
+                    .post__title
+                        border-right: none
+                        text-align: center
+                        margin-bottom: 32px
+                        h2 
+                            margin-bottom: 12.8px
+                    .post__info
+                        padding: 0
+                        +flex(row, center, center, nowrap)
+                        .post__autor
+                            +flex(row-reverse, flex-start, center, nowrap)
+                            border-left: 1px dotted $borderColor
+                            padding-left: 19.2px
+                            margin-left: 19.2px
+                            span 
+                                margin-left: 14.4px
+                            img 
+                                width: 33.6px
+            footer 
+                padding-left: 48px
+                                
+        .side-content
+            padding: 0px 48px
+        
+@media (max-width: 736px)
+    .head
+        h1 
+            a 
+                padding: 15.1px 16px
+        nav 
+            .nav-on:before
+                height: 44px
+                padding-top: 10px
+            ul 
+                max-width: 70%
+        .search
+            form 
+                input
+                    padding: 6px
+            .search__text
+                height: 44px
+    main
+        padding: 68px 0px 24px 0px
+        .main-content
+            .conception 
+                padding: 0px 24px
+                .conception__content
+                    h2
+                        margin-bottom: 8.8px
+                        +font(900, 1.25rem, 1.65, 0.25em, normal)
+            .post
+                margin-bottom: 32px
+                .post__header
+                    padding: 48px 24px 32px 24px
+                    .post__title
+                        h2 
+                            +font(900, 1.1rem, 1.65, 0.25em, normal)
+                            margin-bottom: 6.4px
+                .post__content
+                    padding: 24px 24px 0px 24px
+                    .post__img
+                        margin-bottom: 24px
+                .post__footer
+                    padding: 0px 24px 32px 24px
+            footer 
+                padding-left: 24px
+        .side-content
+            padding: 0px 24px
+
+@media (max-width: 600px)
+    .head
+        .search
+            form 
+                input
+                    margin-left: 8px
+                    padding: 4px
+                    border: $border
+                    +font(400, 0.7rem, 1, normal, normal)
+                    transition: color 0.5s linear 0.1s
+                input::placeholder
+                    +font(400, 0.7rem, 1, normal, normal)
+                input:focus
+                    border: 1px solid $hoverColor
+    main
+        .main-content
+            .post
+                .post__footer
+                    +flex(column-reverse, flex-start, stretch, nowrap)
+                    .post__aditional
+                        +flex(row, center, center, nowrap)
+                        margin-bottom: 32px
+@media (max-width: 480px)
+    .head
+        nav
+            h1 
+                display: none
+        .search
+            form 
+                input
+                    margin-left: 18px
+                    padding: 6px
+                    border: $border
+                    +font(400, 1rem, 1, normal, normal)
+                    transition: color 0.5s linear 
+                input::placeholder
+                    +font(400, 1rem, 1, normal, normal)
+                input:focus
+                    border: 1px solid $hoverColor
+    main
+        .main-content
+            padding-bottom: 0
+            border-bottom: none
+            .post
+                .post__header
+                    border-bottom: none
+                    padding-bottom: 40px
+                    .post__info
+                        +flex(column, center, center, nowrap)
+                        .post__time
+                            text-align: center
+                        .post__autor
+                            border-left: none
+                            padding-left: 0
+                            margin-left: 0
+                            margin-top: 9.6px
+                            span 
+                                display: none
+                .post__content 
+                    padding: 0px
+                    p 
+                        padding: 0px 24px
+            footer
+                width: 100%
+                +flex(column, flex-start, stretch, nowrap)
+                padding: 0 24px
+                .switch:not(:first-child)
+                    margin-left: 0px
+                .switch:first-child
+                    margin-bottom: 16px
+        .side-content
+            .little-posts
+                border-top: $border
+                padding-top: 48px
+                +flex(column, flex-start, center, nowrap)
+                .post-mini
+                    width: 100%
+
