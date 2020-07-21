@@ -14,6 +14,19 @@
     .button:hover
         color: $hoverColor
         border: 1px solid $hoverColor
+    footer
+        .switch
+            padding: 0 36px
+            background-color: $bgColor2
+        .switch.disabled
+            color: $borderColor
+        .switch.disabled:hover
+            color: $borderColor
+            border: $border
+        .switch:not(:first-child)
+            margin-left: 16px
+.main-content,
+#page
     .post
         width: 100%
         +flex(column, flex-start, stretch, nowrap)
@@ -112,15 +125,5 @@
                     margin-left: 19.2px
                     padding-left: 38.4px
                     border-left: $border
-    footer
-        .switch
-            padding: 0 36px
-            background-color: $bgColor2
-        .switch.disabled
-            color: $borderColor
-        .switch.disabled:hover
-            color: $borderColor
-            border: $border
-        .switch:not(:first-child)
-            margin-left: 16px
+
         

@@ -124,6 +124,8 @@
             border-bottom: none
             .conception 
                 padding: 0px 48px
+            footer 
+                padding-left: 48px  
             .post
                 .post__header
                     +flex(column, flex-start, stretch, nowrap)
@@ -149,15 +151,39 @@
                             span 
                                 margin-left: 14.4px
                             img 
-                                width: 33.6px
-            footer 
-                padding-left: 48px
-                                
+                                width: 33.6px                             
         .side-content
             padding: 0px 48px
             .little-posts
                 border-top: $border
                 padding-top: 48px
+    #page       
+        .post
+            .post__header
+                +flex(column, flex-start, stretch, nowrap)
+                padding: 60px 48px 52px 48px
+                .post__title,
+                .post__info
+                    width: 100%
+                    padding: 0
+                .post__title
+                    border-right: none
+                    text-align: center
+                    margin-bottom: 32px
+                    h2 
+                        margin-bottom: 12.8px
+                .post__info
+                    padding: 0
+                    +flex(row, center, center, nowrap)
+                    .post__autor
+                        +flex(row-reverse, flex-start, center, nowrap)
+                        border-left: 1px dotted $borderColor
+                        padding-left: 19.2px
+                        margin-left: 19.2px
+                        span 
+                            margin-left: 14.4px
+                        img 
+                            width: 33.6px  
         
 @media (max-width: 736px)
     .head
@@ -186,6 +212,8 @@
                     h2
                         margin-bottom: 8.8px
                         +font(900, 1.25rem, 1.65, 0.25em, normal)
+            footer 
+                padding-left: 24px
             .post
                 margin-bottom: 32px
                 .post__header
@@ -200,10 +228,24 @@
                         margin-bottom: 24px
                 .post__footer
                     padding: 0px 24px 32px 24px
-            footer 
-                padding-left: 24px
+
         .side-content
             padding: 0px 24px
+    #page
+        .post
+            margin-bottom: 32px
+            .post__header
+                padding: 48px 24px 32px 24px
+                .post__title
+                    h2 
+                        +font(900, 1.1rem, 1.65, 0.25em, normal)
+                        margin-bottom: 6.4px
+            .post__content
+                padding: 24px 24px 0px 24px
+                .post__img
+                    margin-bottom: 24px
+            .post__footer
+                padding: 0px 24px 32px 24px
 
 @media (max-width: 600px)
     .head
@@ -246,6 +288,14 @@
                     border: 1px solid $hoverColor
     main
         .main-content
+            footer
+                width: 100%
+                +flex(column, flex-start, stretch, nowrap)
+                padding: 0 24px
+                .switch:not(:first-child)
+                    margin-left: 0px
+                .switch:first-child
+                    margin-bottom: 16px
             .post
                 .post__header
                     border-bottom: none
@@ -265,17 +315,29 @@
                     padding: 0px
                     p 
                         padding: 0px 24px
-            footer
-                width: 100%
-                +flex(column, flex-start, stretch, nowrap)
-                padding: 0 24px
-                .switch:not(:first-child)
-                    margin-left: 0px
-                .switch:first-child
-                    margin-bottom: 16px
         .side-content
             .little-posts
                 +flex(column, flex-start, center, nowrap)
                 .post-mini
                     width: 100%
+    #page  
+        .post
+            .post__header
+                border-bottom: none
+                padding-bottom: 40px
+                .post__info
+                    +flex(column, center, center, nowrap)
+                    .post__time
+                        text-align: center
+                    .post__autor
+                        border-left: none
+                        padding-left: 0
+                        margin-left: 0
+                        margin-top: 9.6px
+                        span 
+                            display: none
+            .post__content 
+                padding: 0px
+                p 
+                    padding: 0px 24px
 
