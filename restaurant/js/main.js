@@ -629,7 +629,6 @@ function getMenuItem(data) {
 function renderItems(data) {
   var list = "";
   var contain = document.querySelector('.menu>.container');
-  console.log(contain);
 
   if (document.body.clientWidth > 624) {
     contain.classList.contains('small') && contain.classList.remove('small');
@@ -670,10 +669,16 @@ function Resized(evt) {
   }
 }
 
+function Orientation(evt) {
+  var list = document.querySelector(".active").id;
+  renderItems(menu[list]);
+}
+
 window.onload = function () {
   setCategories(listCategories);
   renderItems(menu.pizza);
   window.addEventListener('resize', Resized, false);
+  window.addEventListener('orientationchange', Orientation, false);
   var pizza = document.getElementById("pizza");
   pizza.addEventListener('click', Selected, false);
   var soupe = document.getElementById("soupe");
