@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header id="header">
+    <!-- <a class="logo" href="#header"> -->
+      <picture class="logo">
+        <source media="(max-width: 640px), (max-height:520px)" srcset="images/logo-mob.png">
+        <img src="images/logo.png" alt="">  
+      </picture>
+    <!-- </a> -->
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="#header">Home</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="#about">About</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="#book">Booking</a>
+        </li>
+      </ul>
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="#menu">Menu</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-main">
+      <h4> Restaurant</h4>
+      <h1 class="header-main__name">PIZZA & PASTA</h1>
+      <div class="header-main__btns">
+        <a class="header-main__btn button"  href="#book">BOOK TABLE</a>
+        <a class="header-main__btn button"  href="#main">Explore</a>
+      </div>
+    </div>
+    <div class="header-scroll">
+      <a href="#main">
+        <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="31.0416" cy="31.1785" r="30" stroke="white" stroke-opacity="0.7"/>
+          <ellipse cx="31.0416" cy="31.1785" rx="20" ry="20" fill="white" fill-opacity="0.7"/>
+          <path d="M30.4166 33.4285L25.1041 28.116C24.9218 27.9337 24.8307 27.7124 24.8307 27.452C24.8307 27.1915 24.9218 26.9702 25.1041 26.7879L26.0026 25.9285C26.1849 25.7462 26.4062 25.6551 26.6666 25.6551C26.927 25.6551 27.1484 25.7462 27.3307 25.9285L31.0807 29.6785L34.8307 25.9285C35.013 25.7462 35.2343 25.6551 35.4948 25.6551C35.7552 25.6551 35.9765 25.7462 36.1588 25.9285L37.0573 26.7879C37.2395 26.9702 37.3307 27.1915 37.3307 27.452C37.3307 27.7124 37.2395 27.9337 37.0573 28.116L31.7448 33.4285C31.5625 33.6108 31.3411 33.702 31.0807 33.702C30.8203 33.702 30.5989 33.6108 30.4166 33.4285Z" fill="#333333"/>
+      </svg>
+      </a>
+    </div>
+  </header>
+  <main id="main">
+    <section id="menu" class="page-section menu">
+      <div class="container">
+        <div class="page-section__header">
+          <h3 class="page-section__title">RESTAURANT MENU</h3>
+          <p class="page-section__description">
+            Here you can give a brief description of dishes, describe the characteristics of food and service.
+          </p>
+        </div>
+        <div class="menu__main">
+          <ul class="menu__nav">
+          </ul>
+          <ul class="menu__list">
+          </ul>
+        </div>
+        <div class="menu__more">
+          <a class="menu__btn button" href="#">View all menu</a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="page-section about">
+      <div class="container">
+        <div class="page-section__main">
+          <div class="page-section__header">
+            <h3 class="page-section__title">about us</h3>
+            <p class="page-section__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, 
+              molestie est a, tempor magna.
+            </p>
+          </div>
+          <p class="page-section__text">
+            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. 
+            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. 
+            Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+          </p>
+        </div>
+        <div class="page-section__picture">
+          <picture class="page-section__img">
+            <source media="(max-width: 640px)" srcset="images/about.jpg">
+            <img src="images/about.jpg" alt="">  
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="page-section gallery">
+      <div class="container">
+        <div class="gallery__inner">
+          <div class="gallery__item dishes">
+            <a href="#gallery" class="gallery__item-over1"></a>
+            <h3 class="gallery__item-title">dishes</h3>
+            <div class="gallery__item-over2"></div>
+          </div>
+          <div class="gallery__item staff">
+            <a href="#gallery" class="gallery__item-over1"></a>
+            <h3 class="gallery__item-title">staff</h3>
+            <div class="gallery__item-over2"></div>
+          </div>
+          <div class="gallery__item restaurant">
+            <a href="#gallery" class="gallery__item-over1"></a>
+            <h3 class="gallery__item-title">restaurant</h3>
+            <div class="gallery__item-over2"></div>
+          </div>
+          <div class="gallery__item events">
+            <a href="#gallery" class="gallery__item-over1"></a>
+            <h3 class="gallery__item-title">events</h3>
+            <div class="gallery__item-over2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="book" class="page-section book">
+      <div class="container">
+        <div class="page-section__picture">
+          <picture class="page-section__img">
+            <source media="(max-width: 640px)" srcset="images/booking.jpg">
+            <img src="images/booking.jpg" alt="">  
+          </picture>
+        </div>
+        <div class="page-section__main">
+          <div class="page-section__header">
+            <h3 class="page-section__title">book a table</h3>
+          </div>
+          <form class="page-section__form">
+            <input class="page-section__input" type="text" placeholder="Name">
+            <input class="page-section__input" type="email" placeholder="Email">
+            <input class="page-section__input" type="tel" placeholder="Phone">
+            <!-- <input class="page-section__input" list="people" placeholder="People"> -->
+            <!-- <datalist id="people">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+              <option value="5">
+              <option value="...">
+            </datalist> -->
+            <input class="page-section__input" type="number" placeholder="People">
+            <input class="page-section__input" type="text" placeholder="Date (mm/dd)">
+            <input class="page-section__input" type="text" placeholder="Time">
+            <button class="page-section__form-btn button" type="button">RESERVE</button>
+          </form>
+          <p class="page-section__note">
+            Please wait for a call or email confirming the reservation. Or you can reserve a table 
+            by phone +40 111 111 111
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contacts" class="page-section contacts">
+      <div class="container">
+        <div class="page-section__main">
+          <div class="page-section__header">
+            <h3 class="page-section__title">CONTACTS</h3>
+            <p class="page-section__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, 
+              molestie est a, tempor magna.
+            </p>
+          </div>
+          <div class="page-section__data">
+            <div>
+              <p>
+                Address:<span> 5th London Boulevard, UK</span>
+              </p>
+              <p>
+                Tel: <span>+40 111 111 111</span> 
+              </p>
+            </div>
+            <div>
+              <p>
+                Opening hours: <span>11:00 - 23:00</span>
+              </p>
+              <p>
+                Email:  <span>office@pizza.com</span>
+              </p>
+            </div>
+          </div>
+          <ul class="page-section__icons">
+            <li class="page-section__icon">
+              <a class="facebook" href="https://www.facebook.com/" target="_blank">              
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M39.375 20C39.375 9.29688 30.7031 0.625 20 0.625C9.29688 0.625 0.625 9.29688 0.625 20C0.625 29.6703 7.71016 37.6859 16.9727 39.1406V25.6008H12.0508V20H16.9727V15.7312C16.9727 10.8758 19.8633 8.19375 24.2906 8.19375C26.4109 8.19375 28.6281 8.57188 28.6281 8.57188V13.3375H26.1844C23.7781 13.3375 23.0273 14.8312 23.0273 16.3633V20H28.4008L27.5414 25.6008H23.0273V39.1406C32.2898 37.6859 39.375 29.6703 39.375 20Z" fill="#F26629" fill-opacity="0.7"/>
+                </svg>
+              </a>
+            </li>
+            <li class="page-section__icon">
+              <a class="twitter" href="https://twitter.com/" target="_blank">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35.7143 2.5H4.28571C1.91964 2.5 0 4.17969 0 6.25V33.75C0 35.8203 1.91964 37.5 4.28571 37.5H35.7143C38.0804 37.5 40 35.8203 40 33.75V6.25C40 4.17969 38.0804 2.5 35.7143 2.5ZM31.3482 14.9062C31.3661 15.125 31.3661 15.3516 31.3661 15.5703C31.3661 22.3438 25.4732 30.1484 14.7054 30.1484C11.3839 30.1484 8.30357 29.3047 5.71429 27.8516C6.1875 27.8984 6.64286 27.9141 7.125 27.9141C9.86607 27.9141 12.3839 27.1016 14.3929 25.7266C11.8214 25.6797 9.66072 24.2031 8.91964 22.1719C9.82143 22.2891 10.6339 22.2891 11.5625 22.0781C8.88393 21.6016 6.875 19.5391 6.875 17.0469V16.9844C7.65179 17.3672 8.5625 17.6016 9.51786 17.6328C8.71467 17.1653 8.05623 16.5311 7.60131 15.7868C7.14639 15.0425 6.90914 14.2113 6.91071 13.3672C6.91071 12.4141 7.19643 11.5391 7.70536 10.7812C10.5893 13.8906 14.9196 15.9219 19.7768 16.1406C18.9464 12.6641 21.9196 9.84375 25.4911 9.84375C27.1786 9.84375 28.6964 10.4609 29.7679 11.4609C31.0893 11.2422 32.3571 10.8125 33.4821 10.2266C33.0446 11.4141 32.125 12.4141 30.9107 13.0469C32.0893 12.9375 33.2321 12.6484 34.2857 12.25C33.4911 13.2734 32.4911 14.1797 31.3482 14.9062Z" fill="#F26629" fill-opacity="0.7"/>
+                </svg>
+              </a>
+            </li>
+            <li class="page-section__icon">
+              <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M20 15.8328C19.0581 15.8331 18.1375 16.0778 17.3546 16.5359C16.5716 16.994 15.9615 17.6449 15.6013 18.4064C15.2411 19.1679 15.147 20.0057 15.331 20.8139C15.515 21.6222 15.9687 22.3646 16.6348 22.9472C17.3009 23.5298 18.1495 23.9266 19.0733 24.0872C19.9971 24.2479 20.9546 24.1653 21.8247 23.8498C22.6949 23.5344 23.4386 23.0003 23.9618 22.315C24.485 21.6297 24.7643 20.8241 24.7643 20C24.7633 18.8948 24.261 17.8351 23.3677 17.0537C22.4744 16.2724 21.2631 15.8332 20 15.8328ZM31.1348 12.6297C30.8924 12.0921 30.5263 11.6038 30.0592 11.1951C29.5921 10.7864 29.0341 10.466 28.4196 10.2539C26.5446 9.60625 22.0804 9.75156 20 9.75156C17.9196 9.75156 13.4598 9.60078 11.5795 10.2539C10.965 10.466 10.407 10.7864 9.93992 11.1951C9.47285 11.6038 9.10674 12.0921 8.86429 12.6297C8.125 14.2703 8.29018 18.1805 8.29018 19.9992C8.29018 21.818 8.125 25.7234 8.86786 27.3695C9.11031 27.9072 9.47642 28.3955 9.94349 28.8041C10.4106 29.2128 10.9686 29.5332 11.583 29.7453C13.458 30.393 17.9223 30.2477 20.0036 30.2477C22.0848 30.2477 26.5429 30.3984 28.4232 29.7453C29.0376 29.5332 29.5957 29.2128 30.0628 28.8041C30.5298 28.3955 30.8959 27.9072 31.1384 27.3695C31.8839 25.7289 31.7125 21.8188 31.7125 20C31.7125 18.1812 31.8839 14.2766 31.1384 12.6305L31.1348 12.6297ZM20 26.4062C18.552 26.4062 17.1364 26.0305 15.9324 25.3266C14.7284 24.6227 13.79 23.6222 13.2359 22.4516C12.6817 21.281 12.5368 19.9929 12.8193 18.7502C13.1018 17.5075 13.799 16.366 14.823 15.4701C15.8469 14.5742 17.1514 13.964 18.5717 13.7168C19.9919 13.4697 21.464 13.5965 22.8018 14.0814C24.1396 14.5663 25.2831 15.3874 26.0875 16.4409C26.892 17.4944 27.3214 18.733 27.3214 20C27.3226 20.8416 27.134 21.6751 26.7665 22.4528C26.399 23.2305 25.8597 23.9371 25.1797 24.5322C24.4996 25.1273 23.692 25.5991 22.8032 25.9207C21.9144 26.2423 20.9618 26.4073 20 26.4062ZM27.6232 14.8203C27.2852 14.8205 26.9547 14.7329 26.6735 14.5687C26.3924 14.4045 26.1732 14.171 26.0437 13.8978C25.9143 13.6246 25.8803 13.3239 25.9461 13.0338C26.012 12.7436 26.1746 12.4771 26.4136 12.2679C26.6526 12.0587 26.9571 11.9162 27.2886 11.8585C27.6201 11.8007 27.9638 11.8303 28.2761 11.9434C28.5884 12.0566 28.8554 12.2482 29.0432 12.4942C29.231 12.7401 29.3313 13.0292 29.3313 13.325C29.3322 13.5214 29.2888 13.7161 29.2036 13.8978C29.1184 14.0795 28.993 14.2447 28.8346 14.3839C28.6763 14.5231 28.488 14.6336 28.2808 14.709C28.0735 14.7845 27.8513 14.8233 27.6268 14.8234L27.6232 14.8203ZM35.7143 2.5H4.28571C3.14907 2.5 2.05898 2.89509 1.25526 3.59835C0.451529 4.30161 0 5.25544 0 6.25L0 33.75C0 34.7446 0.451529 35.6984 1.25526 36.4016C2.05898 37.1049 3.14907 37.5 4.28571 37.5H35.7143C36.8509 37.5 37.941 37.1049 38.7447 36.4016C39.5485 35.6984 40 34.7446 40 33.75V6.25C40 5.25544 39.5485 4.30161 38.7447 3.59835C37.941 2.89509 36.8509 2.5 35.7143 2.5ZM34.1857 25.1562C34.0705 27.1586 33.5482 28.9328 31.8777 30.3906C30.2071 31.8484 28.1813 32.3148 25.8955 32.4102C23.5375 32.5266 16.4679 32.5266 14.1098 32.4102C11.8214 32.3094 9.80089 31.8516 8.12768 30.3906C6.45446 28.9297 5.92857 27.1547 5.81964 25.1562C5.68661 23.0922 5.68661 16.9055 5.81964 14.8438C5.93482 12.8414 6.45089 11.0672 8.12768 9.60938C9.80446 8.15156 11.8304 7.69063 14.1098 7.59531C16.4679 7.47891 23.5375 7.47891 25.8955 7.59531C28.1839 7.69609 30.2107 8.15391 31.8777 9.61484C33.5446 11.0758 34.0768 12.8508 34.1857 14.8531C34.3188 16.9094 34.3188 23.0906 34.1857 25.1562Z" fill="#F26629" fill-opacity="0.7"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="40" height="40" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="page-section__icon">
+              <a class="tripadvisor" href="https://www.tripadvisor.com/" target="_blank">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M36.7299 13.9705L40 9.96737H32.7542C28.9967 7.09002 24.5565 5.55127 20.0111 5.55127C15.4657 5.55127 11.0256 7.09002 7.26806 9.96737H0L3.27014 13.9705C1.32454 15.99 0.170641 18.7954 0.0616979 21.771C-0.0472452 24.7466 0.897669 27.6492 2.68905 29.8419C4.48043 32.0346 6.97192 33.3381 9.61668 33.4663C12.2614 33.5945 14.8434 32.5371 16.7958 30.526L20 34.4478L23.2021 30.5283C24.6285 32.0151 26.4094 33.0016 28.3266 33.3669C30.2438 33.7323 32.2141 33.4605 33.9962 32.5851C35.7782 31.7096 37.2946 30.2684 38.3595 28.438C39.4244 26.6076 39.9916 24.4675 39.9917 22.2799H39.9896C39.9913 20.7157 39.7022 19.1684 39.1408 17.7374C38.5795 16.3063 37.7582 15.0232 36.7299 13.9705ZM10.0042 29.8885C8.66653 29.8885 7.35894 29.4422 6.24674 28.6062C5.13454 27.7701 4.26768 26.5818 3.75579 25.1916C3.2439 23.8013 3.10997 22.2714 3.37093 20.7955C3.63188 19.3196 4.27602 17.9639 5.22187 16.8998C6.16772 15.8357 7.3728 15.1111 8.68473 14.8175C9.99666 14.5239 11.3565 14.6746 12.5923 15.2504C13.8281 15.8263 14.8844 16.8015 15.6276 18.0528C16.3707 19.304 16.7674 20.775 16.7674 22.2799C16.7674 24.2978 16.0548 26.2331 14.7865 27.66C13.5181 29.0868 11.7979 29.8885 10.0042 29.8885ZM20 22.0603C20 17.0533 16.7625 12.7572 12.4938 10.9205C14.8721 9.80556 17.4231 9.23153 19.9997 9.23153C22.5762 9.23153 25.1272 9.80556 27.5056 10.9205C23.2368 12.758 20 17.0541 20 22.0603ZM29.9917 29.8885H29.991C28.197 29.8884 26.4766 29.0865 25.2081 27.6594C23.9396 26.2323 23.227 24.2967 23.2271 22.2785C23.2271 20.2603 23.9398 18.3248 25.2083 16.8977C26.4769 15.4706 28.1974 14.6689 29.9913 14.6689C31.7853 14.6689 33.5058 15.4706 34.7743 16.8977C36.0428 18.3248 36.7555 20.2603 36.7556 22.2785C36.7556 24.2967 36.043 26.2323 34.7745 27.6594C33.5061 29.0865 31.7856 29.8884 29.9917 29.8885ZM10.0042 18.2908H10.0035C9.30217 18.2908 8.61662 18.5248 8.03351 18.9631C7.4504 19.4014 6.99593 20.0244 6.72755 20.7533C6.45917 21.4822 6.38895 22.2843 6.52577 23.0581C6.66259 23.8319 7.0003 24.5427 7.49619 25.1006C7.99208 25.6584 8.62389 26.0384 9.31171 26.1923C9.99954 26.3462 10.7125 26.2672 11.3604 25.9653C12.0083 25.6634 12.5621 25.1521 12.9517 24.4961C13.3413 23.8401 13.5493 23.0688 13.5493 22.2799V22.2713C13.5489 21.748 13.4568 21.23 13.2784 20.7468C13.1 20.2636 12.8387 19.8247 12.5095 19.455C12.1803 19.0854 11.7896 18.7924 11.3598 18.5926C10.9299 18.3928 10.4693 18.2903 10.0042 18.2908ZM29.9917 18.2908C29.2904 18.2908 28.6048 18.5248 28.0217 18.9631C27.4386 19.4014 26.9841 20.0244 26.7157 20.7533C26.4474 21.4822 26.3772 22.2843 26.514 23.0581C26.6508 23.8319 26.9885 24.5427 27.4844 25.1006C27.9803 25.6584 28.6121 26.0384 29.2999 26.1923C29.9877 26.3462 30.7007 26.2672 31.3486 25.9653C31.9965 25.6634 32.5503 25.1521 32.9399 24.4961C33.3295 23.8401 33.5375 23.0688 33.5375 22.2799C33.5375 21.2219 33.1639 20.2073 32.499 19.4592C31.834 18.7111 30.9321 18.2908 29.9917 18.2908Z" fill="#F26629" fill-opacity="0.7"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="contacts__btn button" href="https://www.google.com.ua/maps/place/Fifth+Ave,+London,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%96%D1%8F/@51.52913,-0.2117017,17z/data=!4m8!1m2!2m1!1sLondon+5th!3m4!1s0x487610161eec6149:0xb15aadc602bd24a3!8m2!3d51.5295772!4d-0.2114657?hl=en" target="_blank">Get direction</a>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2482.1324751247103!2d-0.2117017!3d51.52913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487610161eec6149%3A0xb15aadc602bd24a3!2sFifth%20Ave%2C%20London%2C%20UK!5e0!3m2!1sen!2sua!4v1597940685386!5m2!1sen!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__scroll">
+      <a href="#header">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="29.9597" cy="29.9637" rx="29.0726" ry="29.0685" transform="rotate(180 29.9597 29.9637)" stroke="#F26629" stroke-opacity="0.7"/>
+          <ellipse cx="29.9597" cy="29.9637" rx="19.3817" ry="19.379" transform="rotate(180 29.9597 29.9637)" fill="#F26629" fill-opacity="0.7"/>
+          <path d="M30.5847 28.0928L35.8972 33.4053C36.0795 33.5876 36.1706 33.8089 36.1706 34.0693C36.1706 34.3298 36.0795 34.5511 35.8972 34.7334L34.9988 35.5928C34.8165 35.7751 34.5951 35.8662 34.3347 35.8662C34.0743 35.8662 33.8529 35.7751 33.6706 35.5928L29.9206 31.8428L26.1706 35.5928C25.9884 35.7751 25.767 35.8662 25.5066 35.8662C25.2462 35.8662 25.0248 35.7751 24.8425 35.5928L23.9441 34.7334C23.7618 34.5511 23.6706 34.3298 23.6706 34.0693C23.6706 33.8089 23.7618 33.5876 23.9441 33.4053L29.2566 28.0928C29.4389 27.9105 29.6602 27.8193 29.9206 27.8193C30.1811 27.8193 30.4024 27.9105 30.5847 28.0928Z" fill="white"/>
+        </svg>          
+      </a>
+    </div>
+  </footer>
+	<script src="js/main.min.js"></script> 
+</body>
+</html>
